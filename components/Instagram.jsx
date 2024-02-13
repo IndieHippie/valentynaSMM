@@ -9,7 +9,7 @@ import InstagramImg from "./InstagramImg";
 
 const Instagram = () => {
   return (
-    <div className="max-w-[1240px] mx-auto text-center py-24">
+    <div className="max-w-[1240px] mx-auto text-center py-18">
       <p className="text-2xl font-bold">Follow me on Instagram</p>
       <a
         href="https://www.instagram.com/v.slavinska?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
