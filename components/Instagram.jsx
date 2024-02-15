@@ -11,13 +11,15 @@ const Instagram = () => {
   return (
     <div className="max-w-[1240px] mx-auto text-center py-18">
       <p className="text-2xl font-bold">Follow me on Instagram</p>
-      <a
-        href="https://www.instagram.com/v.slavinska?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <p className="pb-4">@v.slavinska</p>
-      </a>
+      <div className="pb-4">
+        <a
+          href="https://www.instagram.com/v.slavinska?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="hover:text-blue-500 duration-300"> @v.slavinska</span>
+        </a>
+      </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4">
         <InstagramImg socialImg={IgImg1} />

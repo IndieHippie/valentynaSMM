@@ -22,6 +22,10 @@ const Navbar = () => {
       }
     };
     window.addEventListener('scroll', changeColor);
+    // Cleanup listener on unmount
+    return () => {
+      window.removeEventListener('scroll', changeColor);
+    };
   }, []);
 
   return (

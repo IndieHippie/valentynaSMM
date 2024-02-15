@@ -8,7 +8,7 @@ const Hero = ({ heading, message }) => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-fixed bg-center bg-cover custom-img">
+    <div className="flex items-center justify-center mb-12 h-screen bg-fixed bg-center bg-cover custom-img">
       {/* Overlay */}
       <div className="absolute top-0 left-0 right-0 bottom-0 z-[2]" />
       <div className="p-5 text-white z-[2] mt-[-10rem]">
@@ -20,7 +20,7 @@ const Hero = ({ heading, message }) => {
         {/* Wrap the button with Link */}
         <Link href="https://t.me/slavinskaofficiall">
           <a
-            className="inline-flex items-center px-4 py-2 border"
+            className="inline-flex items-center px-4 py-2 border hover:border-blue-500 hover:text-blue-500 duration-500"
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleBookClick}
