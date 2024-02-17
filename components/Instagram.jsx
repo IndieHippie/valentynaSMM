@@ -6,6 +6,7 @@ import IgImg4 from "../public/ig-img-4.jpeg";
 import IgImg5 from "../public/ig-img-5.jpeg";
 import IgImg6 from "../public/ig-img-6.jpeg";
 import InstagramImg from "./InstagramImg";
+import Link from "next/link";
 
 const Instagram = () => {
   return (
@@ -17,17 +18,56 @@ const Instagram = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <span className="hover:text-blue-500 duration-300"> @v.slavinska</span>
+          <span className="hover:text-blue-500 duration-300">
+            {" "}
+            @v.slavinska
+          </span>
         </a>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4">
-        <InstagramImg socialImg={IgImg1} />
-        <InstagramImg socialImg={IgImg2} />
-        <InstagramImg socialImg={IgImg3} />
-        <InstagramImg socialImg={IgImg4} />
-        <InstagramImg socialImg={IgImg5} />
-        <InstagramImg socialImg={IgImg6} />
+        <a
+          href="https://www.instagram.com/p/C3CXgAqNjop/?utm_source=ig_web_copy_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramImg socialImg={IgImg1} />
+        </a>
+        <a
+          href="https://www.instagram.com/p/C2nAmn3N14e/?utm_source=ig_web_copy_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramImg socialImg={IgImg2} />
+        </a>
+        <a
+          href="https://www.instagram.com/p/Cys95jEt_ww/?utm_source=ig_web_copy_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramImg socialImg={IgImg3} />
+        </a>
+        <a
+          href="link_to_instagram_post_4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramImg socialImg={IgImg4} />
+        </a>
+        <a
+          href="link_to_instagram_post_5"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramImg socialImg={IgImg5} />
+        </a>
+        <a
+          href="link_to_instagram_post_6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramImg socialImg={IgImg6} />
+        </a>
       </div>
     </div>
   );
