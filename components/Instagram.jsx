@@ -7,11 +7,15 @@ import IgImg5 from "../public/ig-img-5.jpeg";
 import IgImg6 from "../public/ig-img-6.jpeg";
 import InstagramImg from "./InstagramImg";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+
 
 const Instagram = () => {
+    const { t } = useTranslation();
+
   return (
     <div className="max-w-[1240px] mx-auto text-center py-18">
-      <p className="text-2xl font-bold">Follow me on Instagram</p>
+      <p className="text-2xl font-bold">{t("instagram")}</p>
       <div className="pb-4">
         <a
           href="https://www.instagram.com/v.slavinska?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"

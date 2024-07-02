@@ -81,25 +81,25 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/">Home</Link>
+              <Link href="/">{t("home")}</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/#gallery">Gallery</Link>
+              <Link href="/#gallery">{t("gallery")}</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/work">Work</Link>
+              <Link href="/work">{t("work")}</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact">{t("contact")}</Link>
             </li>
             <li
               onClick={handleNav}

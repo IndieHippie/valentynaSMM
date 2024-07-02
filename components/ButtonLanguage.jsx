@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const [selectedLanguage, setSelectedLanguage] = useState("ukr");
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
@@ -27,7 +27,7 @@ function LanguageSwitcher() {
           selectedLanguage === "ukr" ? "text-active font-bold" : "text-gray-500"
         }`}
       >
-        Ukr
+        Укр
       </button>
     </div>
   );

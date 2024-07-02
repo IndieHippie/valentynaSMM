@@ -1,8 +1,11 @@
 import React from "react";
 import Link from "next/link"; // Import Link from Next.js
 import { FaTelegramPlane } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Hero = ({ heading, message }) => {
+  const { t } = useTranslation();
+
   const handleBookClick = () => {
     // Handle the click event here if needed
   };
@@ -25,7 +28,7 @@ const Hero = ({ heading, message }) => {
             rel="noopener noreferrer"
             onClick={handleBookClick}
           >
-            <span className="mr-2">Book</span>
+            <span className="mr-2">{t("book")}</span>
             <FaTelegramPlane />
           </a>
         </Link>
