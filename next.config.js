@@ -1,12 +1,20 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const { i18n } = require('./next-i18next.config');
 
-module.exports = {
+const nextConfig = {
+  i18n,
+  reactStrictMode: true,
   images: {
-    domains: [
-      'images.unsplash.com',
-    ]
-  }
-}
+    domains: ['images.unsplash.com'],
+  },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.(pdf|mp4)$/i,
+      type: 'asset/resource',
+    });
+
+    return config;
+  },
+};
+
+module.exports = nextConfig;
