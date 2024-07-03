@@ -3,7 +3,7 @@ import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import { useTranslation } from "react-i18next";
 
-const contact = () => {
+const Contact = () => {
   const { t } = useTranslation();
 
   return (
@@ -14,4 +14,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

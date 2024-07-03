@@ -4,7 +4,7 @@ import Portfolio from "../components/Portfolio";
 import { useTranslation } from "react-i18next";
 
 
-const work = () => {
+const Work = () => {
     const { t } = useTranslation();
 
   return (
@@ -15,4 +15,4 @@ const work = () => {
   );
 };
 
-export default work;
+export default Work;
