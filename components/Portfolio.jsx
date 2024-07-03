@@ -1,10 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Portfolio = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className="max-w-[1240px] mx-auto py-16 text-center">
-      <h1 className="font-bold text-2xl p-4">About me</h1>
+    <div className="max-w-[1240px] mx-auto py-16 ">
+      <h1 className="text-center font-bold text-2xl p-4">{t("about")}</h1>
       <div className="text-center py-4 text-xl font-bold uppercase tracking-wider">
         <div className="hidden sm:block">
           <p>SMM, Digital Creator</p>
@@ -17,18 +20,56 @@ const Portfolio = () => {
         eius.
       </h2>
       <div className="text-center py-4">
-        <h5 className="font-bold text-center underline text-[18px] py-2">Skills</h5>
+        <h5 className="font-bold text-center underline text-[18px] py-2">
+          {/* {t("skills")} */}
+          Послуги
+        </h5>
         <p className="py-2">
           {/* {t("")} */}
-          Professional violin playing skills
-          <span className="px-2">|</span>Creativity
-          <span className="px-2">|</span>Attention to detail
-          <span className="px-2">|</span>
-          Teamwork
-          <span className="px-2">|</span>
-          Teaching knowledge with different ages
-          <span className="px-2">|</span>
-          Individual approach
+          Повне ведення акаунту: упаковка профілю, аналіз ЦА та конкурентів,
+          стратегія, контент план, написання постів, візуал, звіт (потижневий,
+          помісячний).
+          <br /> Зйомка контенту на 2 тижні - 1 година: 10 готових фото, 2
+          змонтовані reels.
+        </p>
+      </div>
+      <div className="py-4">
+        <h5 className="font-bold text-center underline text-[18px] py-2">
+          {/* {t("skills")} */}
+          Разові послуги
+        </h5>
+        <ul className="leading-relaxed left-aligned py-2 px-2">
+          <li>- сценарії та монтаж reels без зйомки </li>
+          <li>- створення
+          візуалу без зйомки (9 постів, обкладинки+наповнення highlights, шапка
+          профілю і логотип)</li>
+          <li>- «банка ідей»: розробка 100 ідей для розвитку
+          вашого блогу (stories, рубрики, офери).</li>
+          {/* {t("")} */}
+        </ul>
+      </div>
+      <div className="py-4">
+        <h5 className="font-bold text-center underline text-[18px] py-2">
+          {/* {t("skills")} */}
+          Копірайтинг{" "}
+        </h5>
+        <ul className="leading-relaxed left-aligned py-2 px-2">
+          <li>- написання рекламних текстів (різна тематика)</li>
+          <li>- редагування текстів</li>
+          <li>- розробка tone of voice саме для вашого блогу.</li>
+          {/* {t("")} */}
+        </ul>
+      </div>
+      <div className="text-center py-4">
+        <h5 className="font-bold text-center underline text-[18px] py-2">
+          {t("skills")}
+        </h5>
+        <p className="py-2">
+          {/* {t("")} */}
+          {t("skills1")}
+          <span className="px-2">|</span> {t("skills2")}l
+          <span className="px-2">|</span> {t("skills3")}
+          <span className="px-2">|</span> {t("skills4")}
         </p>
       </div>
       <div className="grid grid-rows-none md:grid-cols-5 p-4 gap-4">

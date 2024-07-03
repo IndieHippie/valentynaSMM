@@ -1,11 +1,15 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Portfolio from "../components/Portfolio";
+import { useTranslation } from "react-i18next";
+
 
 const work = () => {
+    const { t } = useTranslation();
+
   return (
     <div>
-      <Hero heading="My Work" message="This is some of my recent works." />
+      <Hero heading={t("work2")} message={t("work3")} />
       <Portfolio />
     </div>
   );
